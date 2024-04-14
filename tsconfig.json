@@ -1,4 +1,5 @@
 {
+	"extends": "@poolofdeath20/tsconfig/node",
 	"compilerOptions": {
 		"target": "esnext",
 		"module": "esnext",
@@ -6,5 +7,5 @@
 		"moduleResolution": "bundler",
 	},
 	"include": ["*.d.ts", "**/*.ts", "**/.vue"],
-	"references": [{ "path": "./tsconfig.node.json" }],
+	"exclude": ["node_modules"],
 }

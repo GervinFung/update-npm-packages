@@ -1,3 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { getRepos } from '../logic/get-repos';
+</script>
 
-<template></template>
+<template>{{ JSON.stringify(getRepos()) }}</template>

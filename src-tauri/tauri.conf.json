@@ -3,7 +3,7 @@
 		"beforeDevCommand": "pnpm dev",
 		"beforeBuildCommand": "pnpm build",
 		"devPath": "http://localhost:5000",
-		"distDir": "../dist"
+		"distDir": "../build"
 	},
 	"package": {
 		"productName": "update-npm-packages",
