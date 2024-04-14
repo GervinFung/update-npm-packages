@@ -22,9 +22,13 @@
 		"@tauri-apps/cli": "^1",
 		"@types/node": "^20.12.7",
 		"@vitejs/plugin-vue": "^5.0.4",
+		"autoprefixer": "^10.4.19",
 		"gen-env-type-def": "^0.0.4",
+		"postcss": "^8.4.38",
+		"tailwindcss": "^3.4.3",
 		"typescript": "^5.0.2",
 		"vite": "^5.0.0",
+		"vite-node": "^1.5.0",
 		"vue-tsc": "^1.8.5"
 	}
 }
