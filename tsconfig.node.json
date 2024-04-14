@@ -1,0 +1,7 @@
+{
+	"extends": "@poolofdeath20/tsconfig/node",
+	"compilerOptions": {
+		"composite": true
+	},
+	"include": ["vite.config.ts"]
+}

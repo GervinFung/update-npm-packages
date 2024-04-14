@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"isolatedModules": true,
+		"moduleResolution": "bundler",
+	},
+	"include": ["*.d.ts", "**/*.ts", "**/.vue"],
+	"references": [{ "path": "./tsconfig.node.json" }],
+}

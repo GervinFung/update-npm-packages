@@ -1,0 +1,26 @@
+{
+	"name": "update-npm-packages",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc --noEmit && vite build",
+		"preview": "vite preview",
+		"postinstall": "prettier-config-generate"
+	},
+	"dependencies": {
+		"@tauri-apps/api": "^1",
+		"vue": "^3.3.4"
+	},
+	"devDependencies": {
+		"@poolofdeath20/prettier-config-generator": "^0.0.1",
+		"@poolofdeath20/tsconfig": "^0.0.0",
+		"@tauri-apps/cli": "^1",
+		"@types/node": "^20.12.7",
+		"@vitejs/plugin-vue": "^5.0.4",
+		"typescript": "^5.0.2",
+		"vite": "^5.0.0",
+		"vue-tsc": "^1.8.5"
+	}
+}
