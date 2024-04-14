@@ -18,6 +18,7 @@ export default defineConfig(() => {
 		publicDir: `${root}/public`,
 		server,
 		preview: server,
+		envDir: root,
 		build: {
 			emptyOutDir: true,
 			outDir: `${root}/build`,

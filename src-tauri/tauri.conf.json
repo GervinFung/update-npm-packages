@@ -19,9 +19,8 @@
 		},
 		"windows": [
 			{
-				"title": "update-npm-packages",
-				"width": 800,
-				"height": 600
+				"title": "Update NPM Packages",
+				"maximized": true
 			}
 		],
 		"security": {

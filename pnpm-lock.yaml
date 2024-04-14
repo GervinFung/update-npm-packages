@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/geist-mono':
+    specifier: ^5.0.2
+    version: 5.0.2
   '@poolofdeath20/util':
     specifier: ^0.8.0
     version: 0.8.0
@@ -295,6 +298,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/geist-mono@5.0.2:
+    resolution: {integrity: sha512-+8bolYSqN3F0bHln4WPltJ+6r12Z3ZMf+JyHYPfHYrzOyT14fOc9DAmvlTwjl4uncH1v+7baWYApC+yoYl/FLg==}
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}

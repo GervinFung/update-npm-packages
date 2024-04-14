@@ -1,6 +1,8 @@
 import { Octokit } from 'octokit';
 
-import { equalTo } from '@poolofdeath20/util';
+import { Defined, equalTo, type Return } from '@poolofdeath20/util';
+
+type Repos = Return<typeof getRepos>;
 
 const getRepos = async () => {
 	const octokit = new Octokit({
@@ -41,7 +43,11 @@ const getRepos = async () => {
 
 						return {
 							name: repo.name,
-							lastUpdated: repo.pushed_at,
+							lastUpdated: Defined.parse(repo.pushed_at)
+								.map((date) => {
+									return new Date(date);
+								})
+								.orThrow('Could not parse date'),
 							pullRequests: pullRequests.data.length,
 							branches: branches.data.map((branch) => {
 								return branch.name;
@@ -51,9 +57,9 @@ const getRepos = async () => {
 			})
 	);
 
-	console.log(results);
-
 	return results;
 };
+
+export type { Repos };
 
 export { getRepos };

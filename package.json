@@ -11,6 +11,7 @@
 		"generate-type-defintions": "vite-node script/type-def.ts"
 	},
 	"dependencies": {
+		"@fontsource/geist-mono": "^5.0.2",
 		"@poolofdeath20/util": "^0.8.0",
 		"@tauri-apps/api": "^1",
 		"octokit": "^3.2.0",
