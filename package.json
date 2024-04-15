@@ -3,13 +3,6 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vue-tsc --noEmit && vite build",
-		"preview": "vite preview",
-		"postinstall": "prettier-config-generate",
-		"generate-type-defintions": "vite-node script/type-def.ts"
-	},
 	"dependencies": {
 		"@fontsource/geist-mono": "^5.0.2",
 		"@poolofdeath20/util": "^0.8.0",

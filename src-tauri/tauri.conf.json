@@ -1,22 +1,15 @@
 {
 	"build": {
-		"beforeDevCommand": "pnpm dev",
-		"beforeBuildCommand": "pnpm build",
+		"beforeDevCommand": "make start-development-frontend",
+		"beforeBuildCommand": "make build-production-frontend",
 		"devPath": "http://localhost:5000",
 		"distDir": "../build"
 	},
 	"package": {
-		"productName": "update-npm-packages",
+		"productName": "Update NPM Packages",
 		"version": "0.0.0"
 	},
 	"tauri": {
-		"allowlist": {
-			"all": false,
-			"shell": {
-				"all": false,
-				"open": true
-			}
-		},
 		"windows": [
 			{
 				"title": "Update NPM Packages",
